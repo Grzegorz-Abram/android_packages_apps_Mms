@@ -549,6 +549,10 @@ public class MessageListItem extends LinearLayout implements
                 buf.setSpan(new StyleSpan(Typeface.BOLD), m.start(), m.end(), 0);
             }
         }
+
+        int size = android.R.style.TextAppearance_Large;
+        buf.setSpan(new TextAppearanceSpan(mContext, size), 0, buf.length(), 0);
+
         return buf;
     }
 
